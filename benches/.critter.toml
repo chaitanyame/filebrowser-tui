@@ -1,0 +1,32 @@
+# Criterion Benchmark Configuration
+# See https://bheisler.github.io/criterion.rs/book/configuration.html
+
+[analysis]
+# Configure output formats
+output_format = ["console", "html"]
+
+# Plotting configuration
+# gnuplot = "path/to/gnuplot"  # Uncomment if gnuplot is available
+
+[measurements]
+# Measurement time per sample (seconds)
+# Increase this for more stable results on slower systems
+measurement_time = 5.0
+
+# Warm-up time (seconds)
+warm_up_time = 3.0
+
+# Number of samples to collect
+# More samples = more stable results but longer benchmark time
+sample_size = 100
+
+[comparison]
+# Configure baseline comparisons
+# baseline = "main"
+
+[reporting]
+# Verbosity of benchmark output
+# quiet = false  # Set to true for CI environments
+
+# Plot configuration
+# plotting_backend = "plotters"  # or "gnuplot" if available

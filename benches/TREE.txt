@@ -1,0 +1,31 @@
+filebrowser-tui/benches/
+├── .critter.toml                 # Criterion configuration
+├── mod.rs                        # Fixtures and utilities
+│   ├── FixtureBuilder            # Test environment creator
+│   ├── create_mock_file_entries  # Mock data generator
+│   └── create_sortable_entries   # Sort test data
+├── filebrowser_bench.rs          # Main benchmark suite
+│   ├── bench_file_listing()      # Directory read operations
+│   ├── bench_sorting()           # Sort performance tests
+│   ├── bench_search()            # Search operations
+│   ├── bench_ui_rendering()      # UI rendering simulation
+│   ├── bench_file_operations()   # File I/O operations
+│   ├── bench_bulk_rename()       # Rename operations
+│   ├── bench_filtering()         # Filter operations
+│   ├── bench_memory()            # Memory allocation tests
+│   ├── bench_sort_algorithms()   # Algorithm comparison
+│   └── bench_throughput()        # Throughput measurement
+├── run_benches.sh                # Benchmark runner script
+├── README.md                     # User documentation
+├── IMPLEMENTATION.md             # Implementation guide
+└── SUMMARY.md                    # This overview
+
+Cargo.toml changes:
+├── [dev-dependencies]
+│   └── criterion = "0.5"
+├── [[bench]]
+│   └── name = "filebrowser_bench"
+│   └── harness = false
+└── [profile.bench]
+    └── inherits = "release"
+    └── debug = true

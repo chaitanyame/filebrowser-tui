@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  filebrowser:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: filebrowser-tui:latest
+    container_name: fbt
+
+    # Required for TUI apps - interactive terminal
+    stdin_open: true
+    tty: true
+
+    # Prevent container from exiting immediately
+    restart: unless-stopped
+
+    # Mount directories you want to browse
+    volumes:
+      # Mount current directory (read-only for code viewing)
+      - .:/workspace:ro
+      # Mount home directory or current directory for browsing
+      - ${HOME:-.}:/data:rw
+
+    # Working directory inside container
+    working_dir: /data
+
+    # Preserve terminal settings
+    environment:
+      - TERM=${TERM:-xterm-256color}
+      - LANG=C.UTF-8
+      - LC_ALL=C.UTF-8
+      - COLUMNS=${COLUMNS:-80}
+      - LINES=${LINES:-24}

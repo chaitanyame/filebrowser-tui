@@ -1,0 +1,31 @@
+# Example docker-compose override file
+# Copy this to docker-compose.override.yml and customize as needed
+
+version: '3.8'
+
+services:
+  filebrowser:
+    # Mount specific directories instead of home
+    volumes:
+      - .:/workspace:ro
+      # Mount your specific directories here:
+      - /home/user/Documents:/data:rw
+      # - /home/user/Downloads:/downloads:rw
+      # - /var/www:/www:rw
+
+    # Or mount multiple directories:
+    # volumes:
+    #   - .:/workspace:ro
+    #   - /home/user:/home:rw
+    #   - /var/www:/www:rw
+
+    # For development, you might want to mount source code
+    # volumes:
+    #   - .:/app:rw
+    #   - cargo-cache:/usr/local/cargo/registry
+    #
+    # working_dir: /app
+    # command: ["cargo", "run"]
+
+# volumes:
+#   cargo-cache:
