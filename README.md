@@ -3,15 +3,13 @@
   ![File Browser TUI](https://img.shields.io/badge/File-Browser_TUI-blue?style=for-the-badge)
   ![Rust](https://img.shields.io/badge/Rust-1.70+-orange?style=for-the-badge&logo=rust)
   ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-  ![Platform](https://img.shields.io/badge/Platform-Windows-blue?style=for-the-badge)
+  ![Platform](https://img.shields.io/badge/Platform-Windows_|_Linux-blue?style=for-the-badge)
 
   # 🗂️ File Browser TUI
 
-  ### A fast, keyboard-driven terminal file browser for Windows
+  ### A fast, keyboard-driven terminal file browser — cross-platform with Windows superpowers
 
-  [Features](#-features) • [Quick Start](#-quick-start) • [Documentation](#-documentation) • [Contributing](#-contributing)
-
-  ![Screenshot](https://img.shields.io/badge/demo-interfaces/purple?style=for-the-badge)
+  [Features](#-features) • [Quick Start](#-quick-start) • [Keyboard Shortcuts](#-keyboard-shortcuts) • [Contributing](#-contributing)
 
 </div>
 
@@ -36,7 +34,7 @@
 
 ## Overview
 
-**File Browser TUI** is a terminal-based file manager for Windows, inspired by classic tools like `lf`, `ranger`, and `norton Commander`, but built specifically for Windows with Rust and the `ratatui` framework.
+**File Browser TUI** is a terminal-based file manager inspired by classic tools like `lf`, `ranger`, and Norton Commander. Built in Rust with the `ratatui` framework, it runs on Windows, Linux, and macOS — with special Windows optimizations for drive letters, UNC paths, and file attributes.
 
 It provides a fast, keyboard-driven interface for file navigation and operations, perfect for power users who prefer terminal workflows.
 
@@ -107,11 +105,25 @@ It provides a fast, keyboard-driven interface for file navigation and operations
 
 ## Quick Start
 
+### Why File Browser TUI?
+
+| Feature | fbt | ranger | lf | ncdu |
+|---------|-----|--------|----|------|
+| **Language** | Rust 🦀 | Python 🐍 | Go | C |
+| **Binary size** | ~5 MB | interpreter | ~4 MB | ~1 MB |
+| **Tabbed browsing** | ✅ | ✅ | ❌ | ❌ |
+| **Split dual-pane** | ✅ | ❌ (miller columns) | ❌ | ❌ |
+| **Undo/Redo** | ✅ | ❌ | ❌ | ❌ |
+| **Bulk rename** | ✅ (preview) | ✅ (bulkrename) | ❌ | ❌ |
+| **Windows drives** | ✅ | ❌ | ❌ | ❌ |
+| **Docker support** | ✅ | ❌ | ❌ | ❌ |
+| **Content search** | ✅ | ❌ | ❌ | ❌ |
+
 ### Install and Run
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/filebrowser-tui.git
+git clone https://github.com/chaitanyame/filebrowser-tui.git
 cd filebrowser-tui
 
 # Build and run
@@ -140,8 +152,8 @@ cargo run
 ### Requirements
 
 - **Rust** 1.70 or later ([install via rustup](https://rustup.rs/))
-- **Windows** 10 or later (for Windows-specific features)
-- **Terminal** that supports true color and UTF-8
+- **Terminal** that supports true color and UTF-8 (Windows Terminal, iTerm2, Alacritty, kitty, etc.)
+- **Windows-specific features** require Windows 10 or later
 
 ### Install from Crates.io (when published)
 
@@ -149,11 +161,11 @@ cargo run
 cargo install filebrowser-tui
 ```
 
-### Build from Source
+### Install from Source
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/filebrowser-tui.git
+git clone https://github.com/chaitanyame/filebrowser-tui.git
 cd filebrowser-tui
 
 # Build release binary
@@ -163,7 +175,7 @@ cargo build --release
 ./target/release/fbt
 ```
 
-### Install System-Wide
+### Install System-Wide (Linux/macOS)
 
 ```bash
 # Copy to ~/.local/bin
@@ -174,7 +186,7 @@ cp target/release/fbt ~/.local/bin/
 echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
 ```
 
-### Windows Installation
+### Install System-Wide (Windows)
 
 ```powershell
 # Using cargo
@@ -523,7 +535,6 @@ See [TEST_FIXES.md](TEST_FIXES.md) for details.
 
 ### Future 💡
 
-- [ ] Linux and macOS ports
 - [ ] Plugin system
 - [ ] Fuzzy matching for search
 - [ ] Thumbnail preview for images
@@ -572,14 +583,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Support
 
-- 📧 Email: [your-email@example.com]
-- 🐛 Issues: [GitHub Issues](https://github.com/yourusername/filebrowser-tui/issues)
-- 💬 Discussions: [GitHub Discussions](https://github.com/yourusername/filebrowser-tui/discussions)
-- 📖 Documentation: [Wiki](https://github.com/yourusername/filebrowser-tui/wiki)
+- 🐛 Issues: [GitHub Issues](https://github.com/chaitanyame/filebrowser-tui/issues)
+- 💬 Discussions: [GitHub Discussions](https://github.com/chaitanyame/filebrowser-tui/discussions)
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/filebrowser-tui&type=Date)](https://star-history.com/#yourusername/filebrowser-tui&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=chaitanyame/filebrowser-tui&type=Date)](https://star-history.com/#chaitanyame/filebrowser-tui&Date)
 
 ---
 

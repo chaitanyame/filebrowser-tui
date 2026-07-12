@@ -1,6 +1,7 @@
 //! File Browser TUI - Library
 //!
-//! A terminal-based file browser for Windows built with Rust and ratatui.
+//! A terminal-based file browser built with Rust and ratatui.
+//! Cross-platform with Windows-specific optimizations (drive letters, UNC paths, etc.).
 
 pub mod app;
 pub mod commands;

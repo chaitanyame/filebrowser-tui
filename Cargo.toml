@@ -3,7 +3,7 @@ name = "filebrowser-tui"
 version = "0.1.0"
 edition = "2021"
 authors = ["File Browser TUI Contributors"]
-description = "A terminal-based file browser for Windows built with Rust and ratatui"
+description = "A terminal-based file browser built with Rust and ratatui — cross-platform with Windows-specific optimizations"
 
 [[bin]]
 name = "fbt"
