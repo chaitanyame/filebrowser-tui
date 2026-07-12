@@ -66,7 +66,7 @@ Before reporting a bug:
 
 ### Create an Issue
 
-[Report a bug on GitHub](https://github.com/yourusername/filebrowser-tui/issues/new?labels=bug&template=bug_report.md)
+[Report a bug on GitHub](https://github.com/chaitanyame/filebrowser-tui/issues/new?labels=bug&template=bug_report.md)
 
 ## Feature Requests
 
@@ -77,7 +77,7 @@ We welcome feature suggestions! Before submitting:
 3. Consider if it fits the project scope
 4. Think about the Windows TUI context
 
-[Suggest a feature on GitHub](https://github.com/yourusername/filebrowser-tui/issues/new?labels=enhancement&template=feature_request.md)
+[Suggest a feature on GitHub](https://github.com/chaitanyame/filebrowser-tui/issues/new?labels=enhancement&template=feature_request.md)
 
 ## Security Issues
 
@@ -90,9 +90,9 @@ We welcome feature suggestions! Before submitting:
 
 ### GitHub
 
-- **Issues**: [Submit bugs and feature requests](https://github.com/yourusername/filebrowser-tui/issues)
-- **Discussions**: [General discussions and questions](https://github.com/yourusername/filebrowser-tui/discussions)
-- **Wiki**: [Documentation and guides](https://github.com/yourusername/filebrowser-tui/wiki)
+- **Issues**: [Submit bugs and feature requests](https://github.com/chaitanyame/filebrowser-tui/issues)
+- **Discussions**: [General discussions and questions](https://github.com/chaitanyame/filebrowser-tui/discussions)
+- **Wiki**: [Documentation and guides](https://github.com/chaitanyame/filebrowser-tui/wiki)
 
 ### Real-time Chat
 

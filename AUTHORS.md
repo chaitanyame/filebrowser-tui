@@ -5,7 +5,7 @@
 ## Contributors List
 
 For a complete list of contributors, please visit:
-https://github.com/yourusername/filebrowser-tui/graphs/contributors
+https://github.com/chaitanyame/filebrowser-tui/graphs/contributors
 
 ## How to Contribute
 
